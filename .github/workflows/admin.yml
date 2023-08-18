@@ -3,7 +3,7 @@ name: Build Admin
 on:
   push:
     tags:
-      - "admin-v4.*"
+      - "v4.*"
 
 jobs:
   build:
