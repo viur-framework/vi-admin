@@ -5,15 +5,14 @@ import copy from 'rollup-plugin-copy'
 import {visualizer} from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
-console.log(path.join(__dirname, "node_modules", "@viur", "viur-shoelace", "dist", "assets"))
 export default defineConfig({
   plugins: [
       visualizer(),
     copy({
       targets: [
         {
-          src: path.join(__dirname, "node_modules", "@viur", "viur-shoelace", "dist", "assets"),
-          dest: path.join(__dirname, 'public', "viur-shoelace")
+          src: path.join(__dirname, "node_modules", "@viur", "shoelace", "dist", "assets"),
+          dest: path.join(__dirname, 'public', "shoelace")
         }
       ]
     }),
@@ -52,7 +51,7 @@ export default defineConfig({
       },
       output: {
         chunkFileNames: (chunkinfo) => {
-          if (chunkinfo['moduleIds'].filter(x => x.includes('node_modules/@viur/viur-shoelace/dist/components')).length > 0) {
+          if (chunkinfo['moduleIds'].filter(x => x.includes('node_modules/@viur/shoelace/dist/components')).length > 0) {
             return `[name].js`
           } else {
             return `[name]-[hash].js`
@@ -60,8 +59,8 @@ export default defineConfig({
 
         },
         manualChunks(id) {
-          if (id.includes('node_modules/@viur/viur-shoelace/dist/components')) {
-            return "viur-shoelace/component_" + id.split("/").slice(-2)[0];
+          if (id.includes('node_modules/@viur/shoelace/dist/components')) {
+            return "shoelace/component_" + id.split("/").slice(-2)[0];
           }
           if(id.includes("node_modules/@viur/ckeditor5-build-classic/build/ckeditor.js")){
             return "viur-ckeditor.js"
