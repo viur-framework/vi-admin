@@ -6,11 +6,11 @@
         <img src="https://img.shields.io/github/license/viur-framework/vi-admin" alt="Badge displaying the license" title="License badge">
     </a>
     <br>
-    A library for communication with the ViUR Core
+    Implementation of a new ViUR administration tool using Vue.js and Shoelace
 </div>
 
 ## What does it do?
-Implementation of a new ViUR administration tool using Vue.js and Shoelace
+The Admin is the administration interface for the Viur Framework
 
 
 ## Installation
