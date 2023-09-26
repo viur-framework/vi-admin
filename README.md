@@ -1,30 +1,27 @@
-# viur-vuevi-wip
+<div align="center">
+    <img src="https://github.com/viur-framework/viur-artwork/raw/main/icons/icon-admin.svg" height="196" alt="A hexagonal logo of the vue components" title="Admin">
+    <h1>ViUR Vue Components</h1>
+    <img alt="latest Version" title="Release" src="https://img.shields.io/github/v/release/viur-framework/vi-admin">
+    <a href="LICENSE">
+        <img src="https://img.shields.io/github/license/viur-framework/vi-admin" alt="Badge displaying the license" title="License badge">
+    </a>
+    <br>
+    A library for communication with the ViUR Core
+</div>
 
-## setup
-`cd vi-base`
+## What does it do?
+Implementation of a new ViUR administration tool using Vue.js and Shoelace
 
-`npm install`
 
-`cd vi`
+## Installation
+```bash
+$ viur install admin
+```
 
-## run
-Switch to vi or vi-base folder and run `npm run dev`
+## License
 
-## info
-to use google login add your client id tp App.vue file.
-DO NOT COMMIT THIS CLIENT ID
+Copyright © 2023 by Mausbrand Informationssysteme GmbH.<br>
+Mausbrand and ViUR are registered trademarks of Mausbrand Informationssysteme GmbH.
 
-###
-you need to add this to your main.py
-```import os
-from viur.core import request
-from viur.core.utils import currentRequest
-
-if os.environ['GAE_ENV'] == "localdev":
-	"Whitelist vueJs Frontend server"
-	def preprocessRequestHandler(path):
-		currentRequest.get().response.headers["Access-Control-Allow-Origin"] = "http://localhost:8081"
-		currentRequest.get().response.headers["Access-Control-Allow-Credentials"] = "true"
-		return (path)
-
-	conf["viur.requestPreprocessor"] = preprocessRequestHandler```
+This project is free software under the MIT license.<br>
+Please see the LICENSE file for details.
