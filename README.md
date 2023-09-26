@@ -10,7 +10,7 @@
 </div>
 
 ## What does it do?
-The Admin is the management interface for the Viur Framework
+The Admin is the administration interface for the Viur Framework
 
 
 ## Installation
