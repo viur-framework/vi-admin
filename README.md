@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://github.com/viur-framework/viur-artwork/raw/main/icons/icon-admin.svg" height="196" alt="A hexagonal logo of the vue components" title="Admin">
-    <h1>ViUR Vue Components</h1>
+    <h1>ViUR Admin</h1>
     <img alt="latest Version" title="Release" src="https://img.shields.io/github/v/release/viur-framework/vi-admin">
     <a href="LICENSE">
         <img src="https://img.shields.io/github/license/viur-framework/vi-admin" alt="Badge displaying the license" title="License badge">
