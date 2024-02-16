@@ -6,5 +6,4 @@ const routes = [
 ]
 
 const router = createRouterInstance(routes) //extend or replace routes
-console.log(router)
 export default router
