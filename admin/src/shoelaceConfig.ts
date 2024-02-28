@@ -38,6 +38,8 @@ import "@viur/shoelace/dist/components/format-date/format-date"
 import "@viur/shoelace/dist/components/color-picker/color-picker"
 import "@viur/shoelace/dist/components/textarea/textarea"
 import "@viur/shoelace/dist/components/animation/animation"
+import "@viur/shoelace/dist/components/tree/tree"
+import "@viur/shoelace/dist/components/tree-item/tree-item"
 
 import { setBasePath, getBasePath } from "@viur/shoelace/dist/utilities/base-path"
 import { registerIconLibrary } from "@viur/shoelace/dist/utilities/icon-library.js"
