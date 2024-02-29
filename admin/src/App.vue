@@ -25,7 +25,7 @@ export default defineComponent({
     const appStore = useAppStore()
 
     onMounted(() => {
-      appStore.state["vi.version"] = [4, 1, 5]
+      appStore.state["vi.version"] = [4, 1, 6]
     })
 
     function getPrimaryColor(lightness) {
