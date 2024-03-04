@@ -1,20 +1,25 @@
 <template>
   <the-loading-screen v-if="!appStore.state['init']"></the-loading-screen>
   <the-main-screen v-else-if="userStore.state['user.loggedin'] === 'yes'"></the-main-screen>
-  <the-login-screen v-else></the-login-screen>
+  <the-login-screen v-else
+    :background-image="appStore.state['admin.login.background']"
+    :logo="appStore.state['admin.login.logo']"
+  >
+  </the-login-screen>
 </template>
 <script lang="ts">
 // @ts-nocheck
-import TheLoginScreen from "@viur/vue-components/screens/TheLoginScreen.vue"
+import TheLoginScreen from "@viur/vue-utils/login/TheLoginScreen.vue"
 import TheMainScreen from "@viur/vue-components/screens/TheMainScreen.vue"
 import TheLoadingScreen from "@viur/vue-components/screens/TheLoadingScreen.vue"
-import { useUserStore } from "@viur/vue-components/stores/user"
+import { useUserStore } from "@viur/vue-utils/login/stores/user"
 import { computed, defineComponent, onBeforeMount, onMounted } from "vue"
 import { Request } from "@viur/vue-utils"
 import { useAppStore } from "@viur/vue-components/stores/app"
 import { useDBStore } from "@viur/vue-components/stores/db"
 import { useColorStore } from "@viur/vue-components/stores/color"
 import { useModulesStore } from "@viur/vue-components/stores/modules"
+import Utils from "@viur/vue-components/utils"
 
 export default defineComponent({
   components: { TheLoginScreen, TheMainScreen, TheLoadingScreen },
@@ -40,7 +45,8 @@ export default defineComponent({
       userStore,
       appStore,
       getPrimaryColor,
-      getSecondaryColor
+      getSecondaryColor,
+      Utils
     }
   }
 })
