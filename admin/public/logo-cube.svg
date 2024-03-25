@@ -1,18 +1,10 @@
-<svg
-   version="1.1"
-   x="0px"
-   y="0px"
-   viewBox="-40 190 380 200"
-   xmlns="http://www.w3.org/2000/svg">
-<g>
-	<polygon
-   fill="currentcolor"
-   points="110.6,471 198.3,471 162.2,365.2 143.9,347.3 94.2,234.1 30.6,290.2 "
-   id="polygon23" />
-	<polygon
-   fill="currentcolor"
-   points="110.6,471 198.3,471 267.4,107.9 189.6,178 143.9,347.3 "
-   id="polygon25" />
-</g>
-
+<svg width="100%" height="100%" viewBox="0 0 16 16" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.8289,0,0,-1.8289,-1057.77,815.317)">
+      <g opacity="0.5" transform="matrix(1.00469,0,0,1.00469,-2.89682,-2.2255)">
+        <path d="M581.7,442.8L580.2,441.5L582.1,437.2L584.2,437.2L581.7,442.8Z" fill="currentcolor"/>
+      </g>
+    </g>
+    <g transform="matrix(1.83748,0,0,-1.83748,-1063.07,819.207)">
+      <path d="M584,444.1L582.1,437.1L584.2,437.1L585.8,445.8L584,444.1Z" fill="currentcolor"/>
+    </g>
 </svg>
