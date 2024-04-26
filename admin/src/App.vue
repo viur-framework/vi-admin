@@ -30,7 +30,7 @@ export default defineComponent({
     const appStore = useAppStore()
 
     onMounted(() => {
-      appStore.state["vi.version"] = [4, 2, 4]
+      appStore.state["vi.version"] = [4, 2, 5]
     })
 
     function getPrimaryColor(lightness) {
@@ -41,11 +41,17 @@ export default defineComponent({
       return colorStore.getSecondaryColor(lightness)
     }
 
+    function getPrimaryAlphaColor(lightness,alpha) {
+      return colorStore.getAlphaColor("primaryColor", lightness, alpha)
+    }
+
+
     return {
       userStore,
       appStore,
       getPrimaryColor,
       getSecondaryColor,
+      getPrimaryAlphaColor,
       Utils
     }
   }
@@ -76,5 +82,8 @@ export default defineComponent({
   --sl-color-secondary-800: v-bind(getSecondaryColor(0));
   --sl-color-secondary-900: v-bind(getSecondaryColor(0));
   --sl-color-secondary-950: v-bind(getSecondaryColor(0));
+
+  --sl-input-border-color-focus: var(--sl-color-primary-500);
+  --sl-input-focus-ring-color: v-bind(getPrimaryAlphaColor(43, 40));
 }
 </style>
