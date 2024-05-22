@@ -30,7 +30,7 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: buildfiles
-        path: deploy/vi
+        path: deploy/admin
 
 
   release:
@@ -47,7 +47,7 @@ jobs:
           path: ./build
 
       - name: archive
-        run: cd ./build && zip viur-vi.zip -r ./*
+        run: cd ./build && zip vi-admin.zip -r ./*
 
       - name: Get version from tag
         id: tag_name
@@ -57,7 +57,7 @@ jobs:
       - name: create release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./build/viur-vi.zip
+          files: ./build/vi-admin.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

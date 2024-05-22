@@ -38,16 +38,16 @@ export default defineConfig({
     }
   },
 
-  base: "/vi/s",
+  base: "",
   build: {
-    //emptyOutDir:true,
-    //target:['esnext'],
-    outDir: path.resolve(__dirname, "../../../deploy/vi"),
+    emptyOutDir: true,
+    target: ["esnext"],
+    outDir: path.resolve(__dirname, "../../../deploy/admin"),
     assetsInlineLimit: 0,
     chunkSizeWarningLimit: 700,
     rollupOptions: {
       input: {
-        index: path.resolve(__dirname, "main.html")
+        index: path.resolve(__dirname, "index.html")
       },
       output: {
         chunkFileNames: (chunkinfo) => {
