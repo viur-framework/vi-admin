@@ -7,6 +7,9 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  define: {
+    '__APP_VERSION__': JSON.stringify(process.env.npm_package_version),
+  },
   plugins: [
     visualizer(),
     copy({
@@ -24,7 +27,7 @@ export default defineConfig({
         }
       }
     })
-    //,VueDevTools() #activate if needed
+    //,VueDevTools() //#activate if needed
   ],
   css: {
     preprocessorOptions: {}
