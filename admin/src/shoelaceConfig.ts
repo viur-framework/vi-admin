@@ -41,6 +41,8 @@ import "@viur/shoelace/dist/components/textarea/textarea"
 import "@viur/shoelace/dist/components/animation/animation"
 import "@viur/shoelace/dist/components/tree/tree"
 import "@viur/shoelace/dist/components/tree-item/tree-item"
+import "@viur/shoelace/dist/components/radio/radio"
+import "@viur/shoelace/dist/components/bar/bar"
 
 import { setBasePath, getBasePath } from "@viur/shoelace/dist/utilities/base-path"
 import { registerIconLibrary } from "@viur/shoelace/dist/utilities/icon-library.js"

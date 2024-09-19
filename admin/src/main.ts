@@ -6,6 +6,9 @@ import bone from "@viur/vue-utils/bones/edit/bone.vue" //import before App.vue
 // @ts-ignore
 import Wrapper_nested from "@viur/vue-utils/bones/edit/wrapper_nested.vue" //import before App.vue
 
+// @ts-ignore
+import ActionHandler from "@viur/vue-components/handler/ActionHandler.vue"
+
 import { createApp } from "vue"
 import App from "./App.vue"
 
@@ -31,6 +34,9 @@ app.use(router)
 app.component("Bone", bone)
 // eslint-disable-next-line vue/multi-word-component-names
 app.component("WrapperNested", Wrapper_nested)// eslint-disable-line
+// eslint-disable-next-line vue/multi-word-component-names
+app.component("ActionHandler",ActionHandler)
+
 // @ts-ignore
 import { de_translations, en_translations } from "@viur/vue-components/translations/translations"
 
