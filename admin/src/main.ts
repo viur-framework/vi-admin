@@ -41,6 +41,7 @@ app.component("ActionHandler",ActionHandler)
 import { de_translations, en_translations } from "@viur/vue-components/translations/translations"
 
 const i18n = createI18n({
+  legacy: false,
   locale: "de",
   fallbackLocale: "en",
   messages: { en: { ...en_translations, ...en }, de: { ...de_translations, ...de } }
