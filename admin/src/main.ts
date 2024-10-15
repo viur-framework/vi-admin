@@ -5,7 +5,7 @@ import "./shoelaceConfig"
 import bone from "@viur/vue-utils/bones/edit/bone.vue" //import before App.vue
 // @ts-ignore
 import Wrapper_nested from "@viur/vue-utils/bones/edit/wrapper_nested.vue" //import before App.vue
-
+import { initApp } from "@viur/vue-components/app"
 // @ts-ignore
 import ActionHandler from "@viur/vue-components/handler/ActionHandler.vue"
 
@@ -29,6 +29,8 @@ app.use(pinia)
 
 pinia.use(piniaPluginPersistedstate)
 app.use(router)
+
+initApp(app)
 
 // eslint-disable-next-line vue/multi-word-component-names
 app.component("Bone", bone)
