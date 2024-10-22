@@ -13,6 +13,7 @@ import { createApp } from "vue"
 import App from "./App.vue"
 
 const app = createApp(App)
+initApp(app)
 
 import router from "./routes"
 import { createPinia } from "pinia"
@@ -30,7 +31,7 @@ app.use(pinia)
 pinia.use(piniaPluginPersistedstate)
 app.use(router)
 
-initApp(app)
+
 
 // eslint-disable-next-line vue/multi-word-component-names
 app.component("Bone", bone)
