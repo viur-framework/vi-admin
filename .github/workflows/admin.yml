@@ -11,23 +11,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [22.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true
         path: "app/sources"
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: 'app/sources/admin/package-lock.json'
     - run: npm install --prefix=app/sources/admin
     - run: npm run build --prefix=app/sources/admin
-    - uses: actions/upload-artifact@master
+    - uses: actions/upload-artifact@v4
       with:
         name: buildfiles
         path: deploy/vi
@@ -39,9 +39,9 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - uses: actions/download-artifact@master
+      - uses: actions/download-artifact@v4
         with:
           name: buildfiles
           path: ./build
@@ -55,7 +55,7 @@ jobs:
           echo ::set-output name=current_version::${GITHUB_REF#refs/tags/v}
 
       - name: create release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: ./build/viur-vi.zip
         env:
