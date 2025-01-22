@@ -5,7 +5,7 @@
     "dev": "npm run dev -w=admin",
     "serve": "npm run serve -w=admin",
     "build": "npm run build -w=admin",
-    "lock:utils": "npm i --prefix=packages/vi-vue-utils/packages/viur-vue-utils --package-lock-only",
+    "lock:utils": "npm i --prefix=packages/vi-vue-utils/src --package-lock-only",
     "lock:components": "npm i --prefix=packages/vi-vue-components/components --package-lock-only",
     "lock:admin": "npm i --prefix=admin --package-lock-only",
     "lock": "npm run lock:utils && npm run lock:components && npm run lock:admin",
@@ -20,6 +20,6 @@
   "workspaces": [
     "admin",
     "packages/vi-vue-components/components",
-    "packages/vi-vue-utils/packages/viur-vue-utils"
+    "packages/vi-vue-utils/src"
   ]
 }
