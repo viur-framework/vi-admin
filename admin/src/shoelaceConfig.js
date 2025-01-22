@@ -1,4 +1,3 @@
-// @ts-nocheck
 import "@viur/shoelace/dist/themes/viur.css"
 import "@viur/shoelace/dist/components/button/button"
 import "@viur/shoelace/dist/components/button-group/button-group"
