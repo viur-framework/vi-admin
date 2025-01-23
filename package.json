@@ -9,12 +9,12 @@
     "lock:components": "npm i --prefix=packages/vi-vue-components/components --package-lock-only",
     "lock:admin": "npm i --prefix=admin --package-lock-only",
     "lock": "npm run lock:utils && npm run lock:components && npm run lock:admin",
-    "update:utils": "npm update @viur/vue-utils -ws -S",
-    "update:components": "npm update @viur/vue-components -ws -S",
+    "update:utils": "npm update @viur/vue-utils -ws -S --package-lock-only",
+    "update:components": "npm update @viur/vue-components -ws -S --package-lock-only",
     "update": "npm run update:utils && npm run update:components",
     "release:utils": "npm run update:utils && npm run lock:utils",
     "release:components": "npm run update && npm run lock:components",
-    "release:admin": "npm run update && npm run lock:admin"
+    "release": "npm run update && npm run lock"
   },
   "author": "Andreas H. Kelch",
   "workspaces": [
