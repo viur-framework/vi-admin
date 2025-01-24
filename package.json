@@ -21,5 +21,8 @@
     "admin",
     "packages/vi-vue-components/components",
     "packages/vi-vue-utils/src"
-  ]
+  ],
+  "optionalDependencies": {
+    "@rollup/rollup-darwin-x64": "^4.31.0"
+  }
 }
