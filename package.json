@@ -6,7 +6,7 @@
     "serve": "npm run serve -w=admin",
     "build": "npm run build -w=admin",
     "lock:utils": "npm i --prefix=packages/vi-vue-utils/src --package-lock-only",
-    "lock:components": "npm i --prefix=packages/vi-vue-components/components --package-lock-only",
+    "lock:components": "npm i --prefix=packages/vi-vue-components/src --package-lock-only",
     "lock:admin": "npm i --prefix=admin --package-lock-only",
     "lock": "npm run lock:utils && npm run lock:components && npm run lock:admin",
     "update:utils": "npm update @viur/vue-utils -ws -S --package-lock-only",
@@ -19,7 +19,7 @@
   "author": "Andreas H. Kelch",
   "workspaces": [
     "admin",
-    "packages/vi-vue-components/components",
+    "packages/vi-vue-components/src",
     "packages/vi-vue-utils/src"
   ],
   "optionalDependencies": {
