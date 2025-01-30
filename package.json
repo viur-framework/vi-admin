@@ -12,9 +12,19 @@
     "update:utils": "npm update @viur/vue-utils -ws -S --package-lock-only",
     "update:components": "npm update @viur/vue-components -ws -S --package-lock-only",
     "update": "npm run update:utils && npm run update:components",
-    "release:utils": "npm run update:utils && npm run lock:utils",
-    "release:components": "npm run update && npm run lock:components",
-    "release": "npm run update && npm run lock"
+    "patch:utils":"npm version patch -w packages/vi-vue-utils/src",
+    "patch:components":"npm version patch -w packages/vi-vue-components/src",
+    "patch:admin":"npm version patch -w admin",
+    "minor:utils":"npm version minor -w packages/vi-vue-utils/src",
+    "minor:components":"npm version minor -w packages/vi-vue-components/src",
+    "minor:admin":"npm version minor -w admin",
+    "release:utils:minor": "npm run minor:utils && npm run update:utils && npm run lock:utils",
+    "release:components:minor": "npm run minor:components && run update && npm run lock:components",
+    "release:minor": "npm run minor:admin && npm run update && npm run lock",
+    "release:utils": "npm run patch:utils && npm run update:utils && npm run lock:utils",
+    "release:components": "npm run patch:components && run update && npm run lock:components",
+    "release": "npm run patch:admin && npm run update && npm run lock"
+    
   },
   "author": "Andreas H. Kelch",
   "workspaces": [
