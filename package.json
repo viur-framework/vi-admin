@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "npm run dev -w=admin",
     "serve": "npm run serve -w=admin",
-    "build": "npm run build -w=admin",
+    "build": "npm ci --prefix=admin && npm run build --prefix=admin",
     "lock:utils": "npm i --prefix=packages/vi-vue-utils/src --package-lock-only",
     "lock:components": "npm i --prefix=packages/vi-vue-components/src --package-lock-only",
     "lock:admin": "npm i --prefix=admin --package-lock-only",
