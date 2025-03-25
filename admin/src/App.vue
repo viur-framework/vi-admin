@@ -7,55 +7,37 @@
   >
   </the-login-screen>
 </template>
-<script lang="ts">
-// @ts-nocheck
-import TheLoginScreen from "@viur/vue-utils/login/TheLoginScreen.vue"
+<script setup>
 import TheMainScreen from "@viur/vue-components/screens/TheMainScreen.vue"
 import TheLoadingScreen from "@viur/vue-components/screens/TheLoadingScreen.vue"
-import { useUserStore } from "@viur/vue-utils/login/stores/user"
+import { useUserStore,TheLoginScreen, Request } from "@viur/vue-utils"
 import { computed, defineComponent, onBeforeMount, onMounted } from "vue"
-import { Request } from "@viur/vue-utils"
 import { useAppStore } from "@viur/vue-components/stores/app"
 import { useDBStore } from "@viur/vue-components/stores/db"
 import { useColorStore } from "@viur/vue-components/stores/color"
 import { useModulesStore } from "@viur/vue-components/stores/modules"
 import Utils from "@viur/vue-components/utils"
 
-export default defineComponent({
-  components: { TheLoginScreen, TheMainScreen, TheLoadingScreen },
-  setup() {
-    const userStore = useUserStore()
-    const dbStore = useDBStore()
-    const colorStore = useColorStore()
-    const appStore = useAppStore()
+const userStore = useUserStore()
+const dbStore = useDBStore()
+const colorStore = useColorStore()
+const appStore = useAppStore()
 
-    onMounted(() => {
-      appStore.state["vi.version"] = __APP_VERSION__.split(".")
-    })
-
-    function getPrimaryColor(lightness) {
-      return colorStore.getPrimaryColor(lightness)
-    }
-
-    function getSecondaryColor(lightness) {
-      return colorStore.getSecondaryColor(lightness)
-    }
-
-    function getPrimaryAlphaColor(lightness,alpha) {
-      return colorStore.getAlphaColor("primaryColor", lightness, alpha)
-    }
-
-
-    return {
-      userStore,
-      appStore,
-      getPrimaryColor,
-      getSecondaryColor,
-      getPrimaryAlphaColor,
-      Utils
-    }
-  }
+onMounted(() => {
+  appStore.state["vi.version"] = __APP_VERSION__.split(".")
 })
+
+function getPrimaryColor(lightness) {
+  return colorStore.getPrimaryColor(lightness)
+}
+
+function getSecondaryColor(lightness) {
+  return colorStore.getSecondaryColor(lightness)
+}
+
+function getPrimaryAlphaColor(lightness,alpha) {
+  return colorStore.getAlphaColor("primaryColor", lightness, alpha)
+}
 </script>
 <style>
 * {

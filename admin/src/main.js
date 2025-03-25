@@ -1,7 +1,6 @@
 import "./shoelaceConfig"
 
-import bone from "@viur/vue-utils/bones/edit/bone.vue" //import before App.vue
-import Wrapper_nested from "@viur/vue-utils/bones/edit/wrapper_nested.vue" //import before App.vue
+import {bone, Wrapper_nested} from "@viur/vue-utils" //import before App.vue
 import { initApp } from "@viur/vue-components/app"
 import ActionHandler from "@viur/vue-components/handler/ActionHandler.vue"
 
