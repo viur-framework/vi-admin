@@ -58,6 +58,23 @@ export default defineComponent({
 })
 </script>
 <style>
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/public/webfont/SourceSans3-VariableFont_wght.ttf');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/public/webfont/SourceSans3-Italic-VariableFont_wght.ttf');
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: italic;
+}
+
+
 * {
   --sl-color-primary-50: v-bind(getPrimaryColor(83));
   --sl-color-primary-100: v-bind(getPrimaryColor(78));
