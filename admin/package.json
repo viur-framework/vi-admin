@@ -13,7 +13,7 @@
         "@ckeditor/ckeditor5-vue": "^5.1.0",
         "@viur/ckeditor5-build-classic": "^1.0.3-v38.0.1",
         "@viur/shoelace": "^1.0.8-v2.19.1",
-        "@viur/vue-components": "^2.1.4",
+        "@viur/vue-components": "^2.1.5",
         "@viur/vue-utils": "^2.3.0",
         "pinia": "^2.3.0",
         "pinia-plugin-persistedstate": "~4.2.0",
