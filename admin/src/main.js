@@ -17,9 +17,7 @@ import { createI18n } from "vue-i18n"
 import en from "./translations/en"
 import de from "./translations/de"
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate"
-import CKEditor from "@ckeditor/ckeditor5-vue"
 
-app.use(CKEditor)
 
 const pinia = createPinia()
 app.use(pinia)
