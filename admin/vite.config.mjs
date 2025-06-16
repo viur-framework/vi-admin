@@ -19,7 +19,7 @@ export default defineConfig({
           dest: path.join(__dirname, "public", "shoelace")
         },
         {
-          src: path.join(__dirname, "node_modules", "@viur", "vue-components", "applications", "scriptor","public"),
+          src: path.join(__dirname, "node_modules", "@viur", "vue-components", "extensions", "scriptor","public"),
           dest: path.join(__dirname, "public", "scriptor")
         }
       ]
