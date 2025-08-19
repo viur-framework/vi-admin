@@ -1,6 +1,7 @@
 {
   "name": "admin-root",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "npm run dev -w=admin",
     "serve": "npm run serve -w=admin",
@@ -24,8 +25,8 @@
     "release:utils": "npm run patch:utils && npm run update:utils && npm run lock:utils",
     "release:components": "npm run patch:components && npm run update && npm run lock:components",
     "release": "npm run patch:admin && npm run update && npm run lock",
-    "lint": "node ../scripts/lint.mjs",
-    "check": "node ../scripts/check.mjs"
+    "lint": "node ./scripts/lint.mjs",
+    "check": "node ./scripts/check.mjs"
   },
   "author": "Andreas H. Kelch",
   "workspaces": [

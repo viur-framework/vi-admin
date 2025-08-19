@@ -10,10 +10,11 @@
 </div>
 
 ## What does it do?
+
 The Admin is the administration interface for the Viur Framework
 
-
 ## Installation
+
 ```bash
 $ viur install admin
 ```

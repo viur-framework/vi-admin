@@ -1,11 +1,11 @@
 <template>
   <the-loading-screen v-if="!appStore.state['init']"></the-loading-screen>
   <the-main-screen v-else-if="userStore.state['user.loggedin'] === 'yes'"></the-main-screen>
-  <the-login-screen v-else
+  <the-login-screen
+    v-else
     :background-image="appStore.state['admin.login.background']"
     :logo="appStore.state['admin.login.logo']"
-  >
-  </the-login-screen>
+  ></the-login-screen>
 </template>
 <script lang="ts">
 // @ts-nocheck
@@ -41,10 +41,9 @@ export default defineComponent({
       return colorStore.getSecondaryColor(lightness)
     }
 
-    function getPrimaryAlphaColor(lightness,alpha) {
+    function getPrimaryAlphaColor(lightness, alpha) {
       return colorStore.getAlphaColor("primaryColor", lightness, alpha)
     }
-
 
     return {
       userStore,
@@ -52,28 +51,27 @@ export default defineComponent({
       getPrimaryColor,
       getSecondaryColor,
       getPrimaryAlphaColor,
-      Utils
+      Utils,
     }
-  }
+  },
 })
 </script>
 <style>
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('/public/webfont/SourceSans3-VariableFont_wght.ttf');
-    font-weight: 125 950;
-    font-stretch: 75% 125%;
-    font-style: normal;
+  font-family: "Source Sans Pro";
+  src: url("/public/webfont/SourceSans3-VariableFont_wght.ttf");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('/public/webfont/SourceSans3-Italic-VariableFont_wght.ttf');
-    font-weight: 125 950;
-    font-stretch: 75% 125%;
-    font-style: italic;
+  font-family: "Source Sans Pro";
+  src: url("/public/webfont/SourceSans3-Italic-VariableFont_wght.ttf");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
 }
-
 
 * {
   --sl-color-primary-50: v-bind(getPrimaryColor(83));

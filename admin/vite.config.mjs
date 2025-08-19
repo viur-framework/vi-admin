@@ -3,12 +3,12 @@ import vue from "@vitejs/plugin-vue"
 import path from "path"
 import copy from "rollup-plugin-copy"
 import { visualizer } from "rollup-plugin-visualizer"
-import VueDevTools from 'vite-plugin-vue-devtools'
+import VueDevTools from "vite-plugin-vue-devtools"
 
 // https://vitejs.dev/config/
 export default defineConfig({
   define: {
-    '__APP_VERSION__': JSON.stringify(process.env.npm_package_version),
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
   plugins: [
     visualizer(),
@@ -16,35 +16,35 @@ export default defineConfig({
       targets: [
         {
           src: path.join(__dirname, "node_modules", "@viur", "shoelace", "dist", "assets"),
-          dest: path.join(__dirname, "public", "shoelace")
+          dest: path.join(__dirname, "public", "shoelace"),
         },
         {
-          src: path.join(__dirname, "node_modules", "@viur", "vue-components", "extensions", "scriptor","public"),
-          dest: path.join(__dirname, "public", "scriptor")
-        }
-      ]
+          src: path.join(__dirname, "node_modules", "@viur", "vue-components", "extensions", "scriptor", "public"),
+          dest: path.join(__dirname, "public", "scriptor"),
+        },
+      ],
     }),
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag.startsWith("sl-")
-        }
-      }
-    })
+          isCustomElement: (tag) => tag.startsWith("sl-"),
+        },
+      },
+    }),
     //,VueDevTools() //#activate if needed
   ],
   css: {
-    preprocessorOptions: {}
+    preprocessorOptions: {},
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src")
-    }
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
   server: {
     fs: {
-      allow: ["/"]
-    }
+      allow: ["/"],
+    },
   },
 
   base: "/vi/s",
@@ -56,7 +56,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 700,
     rollupOptions: {
       input: {
-        index: path.resolve(__dirname, "main.html")
+        index: path.resolve(__dirname, "main.html"),
       },
       output: {
         chunkFileNames: (chunkinfo) => {
@@ -75,8 +75,8 @@ export default defineConfig({
           if (id.includes("node_modules/@viur/ckeditor5-build-classic/build/ckeditor.js")) {
             return "viur-ckeditor.js"
           }
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 })

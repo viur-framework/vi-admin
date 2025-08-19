@@ -18,7 +18,6 @@ import en from "./translations/en"
 import de from "./translations/de"
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate"
 
-
 const pinia = createPinia()
 app.use(pinia)
 
@@ -27,9 +26,9 @@ app.use(router)
 
 // eslint-disable-next-line vue/multi-word-component-names
 app.component("Bone", bone)
-// eslint-disable-next-line vue/multi-word-component-names
-app.component("WrapperNested", Wrapper_nested)// eslint-disable-line
-// eslint-disable-next-line vue/multi-word-component-names
+
+app.component("WrapperNested", Wrapper_nested)
+
 app.component("ActionHandler", ActionHandler)
 
 // @ts-ignore
@@ -39,7 +38,7 @@ const i18n = createI18n({
   legacy: false,
   locale: "de",
   fallbackLocale: "en",
-  messages: { en: { ...en_translations, ...en }, de: { ...de_translations, ...de } }
+  messages: { en: { ...en_translations, ...en }, de: { ...de_translations, ...de } },
 })
 
 app.use(i18n)

@@ -1,6 +1,8 @@
 module.exports = {
   plugins: {
-    'postcss-nesting': { /* plugin options */ },
-    "postcss-custom-media": {}
+    "postcss-nesting": {
+      /* plugin options */
+    },
+    "postcss-custom-media": {},
   },
 }
