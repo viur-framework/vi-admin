@@ -66,6 +66,12 @@ jobs:
           cd ./build
           zip viur-vi.zip -r ./*
 
+      - name: fetch changelog info
+        id: changelog_reader
+        uses: mindsers/changelog-reader-action@v2
+        with:
+          version: ${{ steps.vars.outputs.version }}
+
       - name: create release
         uses: softprops/action-gh-release@v2
         with:
@@ -74,6 +80,7 @@ jobs:
           name: v${{ steps.vars.outputs.version }}
           prerelease: ${{ steps.vars.outputs.is_prerelease == 'true' }}
           make_latest: ${{ steps.vars.outputs.is_prerelease != 'true' }}
-          generate_release_notes: true
+          generate_release_notes: false
+          body: ${{ steps.changelog_reader.outputs.changes }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
