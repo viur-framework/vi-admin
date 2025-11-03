@@ -2,10 +2,10 @@
 
 This file documents any relevant changes.
 ## [4.12.0] 2025-11-03
-- feat: Nutzer die nur view access haben, können nun formulare im readonly mode öffnen
-- feat: debug flag erlaubt nun das anzeigen vom bonename als tooltip und weitere debug Infos für Formulare
-- fix: loading Spinner für Formulare wird nun auch beim ersten öffnen angezeigt
-- feat: scriptor hat nun system-message support
+- feat: Users with view-only access can now open forms in read-only mode.
+- feat: The debug flag now enables display of the bonename as a tooltip and adds further debug information for forms.
+- fix: The loading spinner for forms is now shown on the initial load as well.
+- feat: Scriptor now supports system messages.
 
 
 ## [4.11.3] 2025-10-28
