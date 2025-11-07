@@ -20,7 +20,20 @@ export default defineConfig({
         ]
       }
     ],*/
-    sidebar:false,
+
+
+    sidebar:{
+      "/admininfo/":[
+        {
+          text:"AdminInfo",
+          items:[
+            {text:"Overview", link:"/admininfo/"},
+            {text:"CustomActions",link:"/admininfo/custom-actions"}
+          ]
+        }
+      ]
+    },
+    aside:false,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }

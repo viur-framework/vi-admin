@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Admininfo
-      link: /admininfo
+      link: /admininfo/
     - theme: alt
       text: API Examples
       link: /api-examples
