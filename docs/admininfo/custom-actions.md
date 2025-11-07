@@ -30,15 +30,15 @@ def adminInfo(self):
 | outline | Shoelace Button definition | [See Shoelace](https://serene-allen-537100.netlify.app/components/button/#outline-buttons) | 
 | show_label | Allows displaying only the icon | `true` oder `false` |
 | action | Must be one of the following values: `fetch`,`view`,`open`,`route`,`component`,`action` | [See below](#supported-actions) |
-| fetch_method | POST | --- |
-| url | --- | --- | 
-| params | --- | --- | 
-| target | `popup` | --- | 
-| enabled | `True` or Logics expression for selections | --- |
-| additionalEvalData | --- | --- |
-| then | `reload-module` or `reload-vi` | --- |
-| confirm | Enabled if defined a Confirm Popup with the defined text | --- | 
-| success | Success Message | --- | 
+| url | External or internal URL, or a route within the Admin interface. | `/user/view/self` | 
+| params | **Params** are used with the `view` action to pass additional parameters to the handler. | <code v-pre>`{'rootNode':"{{key}}"}`</code> | 
+| target | Displays the action form in a popup instead of a tab. | `popup` | 
+| fetch_method | Send action from as POST instead of GET | `POST` |
+| enabled | Defines when the button is active. | `True` or Logics expression for selections |
+| additionalEvalData | Additional data provided to the logics expressions to determine whether a button is enabled or disabled. | --- |
+| then | Performs a module reload or vi reload after the action is executed. | `reload-module` or `reload-vi` |
+| confirm | Enabled if defined a Confirm Popup with the defined text | `Are you sure?` | 
+| success | Success Message | `Action was Successful` | 
 
 ## Supported Actions
 Depending on the requirements, one of the following actions can be defined.
@@ -64,3 +64,7 @@ The `name` and `icon` can be overridden by the values defined in the correspondi
 ### component
 A component previously defined in an Admin modification can be used as a complete replacement for the button.
 The component must include a prop named info, which receives the full customAction definition as its value.
+
+### action
+Allows a form action to be displayed either as a popup or within a tab.
+`@viur_selected_keys` is included in the context when the action is executed.

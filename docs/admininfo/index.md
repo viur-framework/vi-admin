@@ -4,8 +4,8 @@ title: Admin Info
 
 # Admin Info
 
-Administrative metadata for the Viur admin UI is aggregated via `/vi/config`.  
-Within the `modules` payload each module exposes its own admin definition.
+The administrative metadata for the Viur Admin user interface is delivered via `/vi/config`.
+Within the module payload, each module provides its own admin definition.
 
 An admin definition only requires `name` and `handler` to be valid.
 
@@ -28,6 +28,7 @@ The admin frontend evaluates the following properties:
 | `customActions` | Dict | Map of action names to custom action definitions. | [Check the sidebar for details](/admininfo/custom-actions) |
 | `editViews` | `[Dict]` | Adds extra tabs to create/edit forms per key/value pair. | [Check the sidebar for details](/admininfo/edit-views) |
 | `actionGroups` | Dict | Groups actions into named sections in the UI. | [Check the sidebar for details](/admininfo/action-groups) |
+| `kinds` | Dict | Defines icons, name, and nesting behavior for trees. | [Check the sidebar for details](/admininfo/treekinds) |
 
 
 <style scoped>
