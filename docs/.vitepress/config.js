@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   title: "Viur Administration",
   description: "The administration interface for Viur 3 systems",
+  base: "/vi-admin/",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
