@@ -29,6 +29,7 @@ The admin frontend evaluates the following properties:
 | `editViews` | `[Dict]` | Adds extra tabs to create/edit forms per key/value pair. | [Check the sidebar for details](/admininfo/edit-views) |
 | `actionGroups` | Dict | Groups actions into named sections in the UI. | [Check the sidebar for details](/admininfo/action-groups) |
 | `kinds` | Dict | Defines icons, name, and nesting behavior for trees. | [Check the sidebar for details](/admininfo/treekinds) |
+| `showWithViewAccess` | `boolean` | If this is set to True the User can see the Module when he have `view` Access only | - |
 
 
 <style scoped>
