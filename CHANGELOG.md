@@ -2,6 +2,15 @@
 
 This file documents any relevant changes.
 
+## [4.13.1] 2025-12-05
+- fix: Column scaling now works correctly.
+- fix: Emailbone focus in Recordbones now behaves as expected.
+- fix: Edits now display an error when an entry cannot be loaded.
+- fix: `categoryDefault` override handling is now more stable.
+- fix: Users with insufficient access rights are now handled more gracefully.
+- feat: Recordbones without a `categoryDefaultname` parameter now fall back to the format string as the default category name.
+
+
 ## [4.13.0] 2025-11-14
 - feat: `recordbones` and `relationalbones` can now use a `categoryDefaultname` parameter to override the default category; format strings are supported.
 - feat: Format strings for `recordbones` no longer need to start with `dest.`
@@ -11,7 +20,6 @@ This file documents any relevant changes.
 - feat: Logging out now automatically closes all open tabs.
 - fix: Hierarchy tabs could break when switching between them.
 - fix: Column resizing in the `ListHandler` now works correctly.
-
 
 
 ## [4.12.1] 2025-11-06
