@@ -11,8 +11,8 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       { text: "Home", link: "/" },
-      { text: "AdminInfo", link: "/admininfo/" },
-      { text: "BoneParameters", link: "/bones/parameters" },
+      { text: "Admininfo", link: "/admininfo/" },
+      { text: "Bone Parameters", link: "/bones/parameters" },
     ],
 
     /*sidebar: [

@@ -17,12 +17,15 @@ hero:
       text: Bone Parameters
       link: /bones/parameters
 
-#features:
-#  - title: Feature A
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#  - title: Feature B
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#  - title: Feature C
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+  - title: Custom Actions
+    details: ViUR defines Custom Actions as various ways to integrate interactive buttons into a handler.
+    link: /admininfo/custom-actions
+  - title: Edit Views
+    details: To display entries that reference the currently opened document, so-called **EditViews** can be defined within a form.
+    link: /admininfo/edit-views
+  - title: Action Groups
+    details: A handler can contain multiple actions, which may cause the top bar in the handler to become cluttered.
+    link: /admininfo/action-groups
 ---
 
