@@ -13,9 +13,9 @@ hero:
     - theme: brand
       text: Admininfo
       link: /admininfo/
-    #- theme: alt
-    #  text: API Examples
-    #  link: /api-examples
+    - theme: alt
+      text: Bone Parameters
+      link: /bones/parameters
 
 #features:
 #  - title: Feature A

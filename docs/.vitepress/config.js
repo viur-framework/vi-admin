@@ -12,6 +12,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "AdminInfo", link: "/admininfo/" },
+      { text: "BoneParameters", link: "/bones/parameters" },
     ],
 
     /*sidebar: [
@@ -34,6 +35,15 @@ export default defineConfig({
             { text: "EditViews", link: "/admininfo/edit-views" },
             { text: "ActionGroups", link: "/admininfo/action-groups" },
             { text: "Treekinds", link: "/admininfo/treekinds" },
+          ],
+        },
+      ],
+      "/bones/": [
+        {
+          text: "Bones",
+          items: [
+            { text: "Overview", link: "/bones/" },
+            { text: "Parameters", link: "/bones/parameters" },
           ],
         },
       ],
