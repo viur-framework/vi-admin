@@ -30,6 +30,7 @@ The admin frontend evaluates the following properties:
 | `actionGroups` | Dict | Groups actions into named sections in the UI. | [Check the sidebar for details](/admininfo/action-groups) |
 | `kinds` | Dict | Defines icons, name, and nesting behavior for trees. | [Check the sidebar for details](/admininfo/treekinds) |
 | `showWithViewAccess` | `boolean` | If this is set to True the User can see the Module when he have `view` Access only | - |
+| `userFilters` | - | - | - |
 
 
 <style scoped>
