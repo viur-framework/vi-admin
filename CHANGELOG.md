@@ -1,6 +1,14 @@
 # Changelog
 
 This file documents any relevant changes.
+## [4.13.2] 2026-01-09
+- fix: Relational bars for Tree Handlers now behave as expected.
+- fix: Time-only DateBones now behave as expected.
+- fix: Improved error handling for Forms.
+- fix: Save and Reset actions for field selection.
+- fix: Added a cooldown to search to prevent rapid repeated requests.
+- fix: “Edit” in `DisabledActions` now opens list entries in view mode.
+
 
 ## [4.13.1] 2025-12-05
 - fix: Column scaling now works correctly.
