@@ -1,6 +1,12 @@
 # Changelog
 
 This file documents any relevant changes.
+
+## [4.14.0] 2026-01-16
+- feat: added multilanguage support.
+- fix: Detaisdrawer styling
+
+
 ## [4.13.2] 2026-01-09
 - fix: Relational bars for Tree Handlers now behave as expected.
 - fix: Time-only DateBones now behave as expected.
