@@ -2,6 +2,13 @@
 
 This file documents any relevant changes.
 
+## [4.14.1] 2026-01-23
+- fix: When custom actions are enabled via configuration, additionalEvalData is now merged over the skel selection.
+- chore: update logicsjs to 0.4.1
+- fix: Moduleinfo headlines now use the correct font size.
+- fix: Administation `user-view` access is not nessesary anymore.
+- fix: Password reset form is now correctly displayed.
+
 ## [4.14.0] 2026-01-16
 - feat: added multilanguage support.
 - fix: Detaisdrawer styling
