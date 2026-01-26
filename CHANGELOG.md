@@ -2,6 +2,10 @@
 
 This file documents any relevant changes.
 
+## [4.14.2] 2026-01-26
+- fix: Administation `user-view` access is not nessesary anymore - now realy.
+- chore: Update flag for English to UK
+
 ## [4.14.1] 2026-01-23
 - fix: When custom actions are enabled via configuration, additionalEvalData is now merged over the skel selection.
 - chore: update logicsjs to 0.4.1
