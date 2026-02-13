@@ -2,6 +2,13 @@
 
 This file documents any relevant changes.
 
+## [4.14.3] 2026-02-13
+- fix: Nested `moduleGroups` are now correctly hidden when empty.
+- feat: The Fluidpage view can now display data from the underlying page.
+- fix: Root node requests in TreeHandlers within edit views now correctly receive the context.
+- fix: The copy button in list context menus (right-click) now works as expected.
+
+
 ## [4.14.2] 2026-01-26
 - fix: Administation `user-view` access is not nessesary anymore - now realy.
 - chore: Update flag for English to UK
