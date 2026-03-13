@@ -2,6 +2,10 @@
 
 This file documents any relevant changes.
 
+## [4.14.4] 2026-03-13
+- feat: Add export functionality with multiple formats (via `@viur/vue-components` update).
+- refactor: Improve null safety and dedup selection logic for Fluidpages (via `@viur/vue-components` update).
+
 ## [4.14.3] 2026-02-13
 - fix: Nested `moduleGroups` are now correctly hidden when empty.
 - feat: The Fluidpage view can now display data from the underlying page.
