@@ -13,6 +13,7 @@ Not all parameters are supported by every widget.
 | **actions**             | `["describe_image", "translate"]` | Enables AI-powered actions, such as generating descriptions for *ImageBones* or translating multilingual *String* or *TextBones*. |
 | **categoryDefaultName** | `"$(rel.name)"`                   | Sets the default category name for *Relational* and *RecordBones*. Format strings are supported.                                  |
 | **collapsedCategories** | `["Contact"]`                     | Defines a list of categories that should be collapsed when the form is opened. `"*"` collapses all categories.                    |
+| **collapse**            | `true`                            | Wraps each entry of a *multiple* bone in a collapsible `sl-details` panel. Entries are expanded by default.                       |
 | **evaluate**            | *Logics*                          | A Logics rule used to compute a value based on user input.                                                                        |
 | **visibleIf**           | *Logics*                          | A Logics rule that hides the widget when the rule evaluates to `false`.                                                           |
 | **requiredIf**          | *Logics*                          | A Logics rule that overrides the bone’s `required` flag.                                                                          |
