@@ -2,6 +2,11 @@
 
 This file documents any relevant changes.
 
+## [4.14.5] 2026-05-22
+- fix: trees and context now work as expected
+- feat: details wrapper vor multiple bones
+
+
 ## [4.14.4] 2026-03-13
 - feat: Add export functionality with multiple formats (via `@viur/vue-components` update).
 - refactor: Improve null safety and dedup selection logic for Fluidpages (via `@viur/vue-components` update).
