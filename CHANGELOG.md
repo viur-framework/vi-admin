@@ -2,6 +2,11 @@
 
 This file documents any relevant changes.
 
+## [4.14.6] 2026-06-08
+- feat: Initial shop order management component — `OrderEditor`.
+- feat: `spatialBone` now supports `visibleIf` and reactively syncs its value with the form state — emits `null` when hidden so the value is cleared on submit.
+
+
 ## [4.14.5] 2026-05-22
 - fix: trees and context now work as expected
 - feat: details wrapper vor multiple bones
