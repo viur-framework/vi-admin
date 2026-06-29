@@ -2,6 +2,9 @@
 
 This file documents any relevant changes.
 
+## [4.14.7] 2026-06-29
+- fix: missing format-number import
+
 ## [4.14.6] 2026-06-08
 - feat: Initial shop order management component — `OrderEditor`.
 - feat: `spatialBone` now supports `visibleIf` and reactively syncs its value with the form state — emits `null` when hidden so the value is cleared on submit.
