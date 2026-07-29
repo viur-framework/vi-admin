@@ -2,6 +2,14 @@
 
 This file documents any relevant changes.
 
+## [4.14.8] 2026-07-29
+- feat: `OrderEditor` now supports order notes and discounts.
+- feat: The export component now offers filter functionality.
+- fix: Empty or null fields in a format string no longer fall back to the placeholder text.
+- fix: Search now resets on context switch and on unmount, and results are sorted by their rendered values.
+- fix: Added a null check for `ensureKeys`.
+- perf: The default `textBone` (CKEditor) is now lazy-loaded.
+
 ## [4.14.7] 2026-06-29
 - fix: missing format-number import
 
