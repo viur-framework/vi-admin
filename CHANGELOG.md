@@ -2,6 +2,13 @@
 
 This file documents any relevant changes.
 
+## [4.15.0] 2026-09-04
+- feat: Support for the envelope-v2 response format — v2 bodies are normalized to the classic shape, so both v1 and v2 backends are served.
+- feat: Forms now support multi-step actions, with slots for steps, actions and list rendering.
+- feat: The scriptor can run up to three scripts in parallel and reuses warm python environments.
+- refactor: Structures are now fetched from `/{module}/structure`; the deprecated `getStructure` endpoint is no longer used.
+- fix: Custom action fetch errors are now handled gracefully.
+
 ## [4.14.8] 2026-07-29
 - feat: `OrderEditor` now supports order notes and discounts.
 - feat: The export component now offers filter functionality.
