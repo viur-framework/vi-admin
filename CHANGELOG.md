@@ -2,6 +2,13 @@
 
 This file documents any relevant changes.
 
+## [4.15.1] 2026-09-09
+- feat: `dateBone` now honours `min` and `max` from its bone params.
+- feat: Closing a scriptor dialog while a script runs now asks whether to close (aborting it) or minimize it.
+- feat: Closing a scriptor tab releases its worker slot and hands the warm python environment on.
+- fix: Nested modules such as `shop.order` no longer 404 on the `/{module}/structure` endpoint.
+- fix: Typo in the menubar log message.
+
 ## [4.15.0] 2026-09-04
 - feat: Support for the envelope-v2 response format — v2 bodies are normalized to the classic shape, so both v1 and v2 backends are served.
 - feat: Forms now support multi-step actions, with slots for steps, actions and list rendering.
