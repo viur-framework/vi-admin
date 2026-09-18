@@ -2,6 +2,12 @@
 
 This file documents any relevant changes.
 
+## [4.15.2] 2026-09-18
+- feat: Closing a running scriptor dialog now aborts the script by default; only scripts that request protection get the close-or-minimize prompt.
+- fix: A reused `Dialog.multiple` in the scriptor is unlocked again instead of waiting for an answer that can no longer be given.
+- fix: Saving or deleting an entry now closes its own tab, not the active one.
+- chore: Update `@viur/vue-components` to 2.7.3; scriptor progress bars are green.
+
 ## [4.15.1] 2026-09-09
 - feat: `dateBone` now honours `min` and `max` from its bone params.
 - feat: Closing a scriptor dialog while a script runs now asks whether to close (aborting it) or minimize it.
