@@ -2,6 +2,11 @@
 
 This file documents any relevant changes.
 
+## [4.15.3] 2026-09-25
+- fix: A multilanguage bone inside a multiple `recordBone` no longer shares its value between entries — editing one entry no longer changes the others.
+- fix: `relationalBone` `params.context` now also filters the inline search, resolves `$(…)` placeholders against the outer form (also from inside a record bone), and skips unresolved placeholders instead of sending `-`.
+- chore: Update `@viur/vue-utils` to 3.4.2 and `@viur/vue-components` to 2.7.4.
+
 ## [4.15.2] 2026-09-18
 - feat: Closing a running scriptor dialog now aborts the script by default; only scripts that request protection get the close-or-minimize prompt.
 - fix: A reused `Dialog.multiple` in the scriptor is unlocked again instead of waiting for an answer that can no longer be given.
