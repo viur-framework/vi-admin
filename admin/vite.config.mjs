@@ -40,6 +40,9 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    // these must exist once per app; @viur/vue-utils and @viur/vue-components declare them as peers,
+    // this also covers linked workspace packages that resolve imports from their own location
+    dedupe: ["vue", "pinia", "vue-router", "vue-i18n"],
   },
   server: {
     fs: {
