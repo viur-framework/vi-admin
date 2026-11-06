@@ -13,8 +13,8 @@
   "dependencies": {
     "@ckeditor/ckeditor5-vue": "^9.0.0",
     "@viur/shoelace": "^1.0.17-v2.20.1",
-    "@viur/vue-components": "^2.7.5",
-    "@viur/vue-utils": "^3.4.5",
+    "@viur/vue-components": "^2.7.6",
+    "@viur/vue-utils": "^3.4.6",
     "@vue/devtools-api": "^8.2.1",
     "ckeditor5": "^49.0.1",
     "pinia": "^4.1.0",
@@ -41,6 +41,12 @@
   "overrides": {
     "rollup-plugin-copy": {
       "globby": "^11.0.0"
+    },
+    "eslint": {
+      "minimatch": "^11.0.5"
+    },
+    "exceljs": {
+      "uuid": "^11.1.1"
     }
   }
 }
