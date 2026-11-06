@@ -2,6 +2,17 @@
 
 This file documents any relevant changes.
 
+## [4.15.4] 2026-11-06
+- feat: Password hints on the login and password recovery screens can now contain HTML and placeholders.
+- fix: If the local search finds nothing, the search now falls back to a database search.
+- fix: Lists no longer show outdated results after quickly switching the context or searching; new entries appear immediately.
+- fix: Resave, delete and move in lists now send the handler context, like saving in the editor.
+- fix: Closing a tab now closes the right one, even if the tab order changed in the meantime.
+- fix: `class`, `id` and `style` set on a `ViForm` are applied to the form again.
+- fix: The edit buttons of fluidpage elements are now square as intended.
+- chore: Update to CKEditor 49, pinia 4, vue-router 5 and Vite 8; `npm audit` no longer reports known vulnerabilities.
+- chore: Update `@viur/vue-utils` to 3.4.6 and `@viur/vue-components` to 2.7.6.
+
 ## [4.15.3] 2026-09-25
 - fix: A multilanguage bone inside a multiple `recordBone` no longer shares its value between entries — editing one entry no longer changes the others.
 - fix: `relationalBone` `params.context` now also filters the inline search, resolves `$(…)` placeholders against the outer form (also from inside a record bone), and skips unresolved placeholders instead of sending `-`.
