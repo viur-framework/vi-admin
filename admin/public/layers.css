@@ -1,0 +1,11 @@
+/*
+  Pin the CSS layer order before any other stylesheet loads. Otherwise the order of first appearance
+  across all CSS files wins, and a chunk that loads before the main CSS makes "form" the weakest
+  layer - the reset then overrides spacing and label styles.
+
+  Deliberately placed in public/ and linked as the first stylesheet in main.html, so Vite neither
+  bundles nor moves it. An import in main.js or a <style> block in App.vue would end up in the main
+  CSS bundle and could not guarantee the order.
+*/
+@layer foundation, themes, elements, utilities;
+@layer foundation.color, foundation.config, foundation.shoelace, foundation.reset, foundation.form;

@@ -2,6 +2,9 @@
 
 This file documents any relevant changes.
 
+## [4.15.5] 2026-11-13
+- fix: Form spacing and label styles are no longer overridden by the CSS reset when a chunk's styles load before the main stylesheet; the CSS layer order is now pinned in `layers.css`.
+
 ## [4.15.4] 2026-11-06
 - feat: Password hints on the login and password recovery screens can now contain HTML and placeholders.
 - fix: If the local search finds nothing, the search now falls back to a database search.
